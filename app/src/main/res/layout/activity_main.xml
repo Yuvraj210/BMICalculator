@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0CE6D1"
+    android:gravity="center_horizontal"
+    android:padding="10dp"
+    tools:context=".MainActivity">
+    
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/bmi"
+        android:layout_marginTop="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BMI calculator"
+        android:textSize="40sp"
+        android:fontFamily="cursive"
+        android:textStyle="bold"
+        android:layout_marginTop="10dp"/>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:elevation="20dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Weight"
+            android:textSize="22dp"
+            android:layout_marginLeft="20dp"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/textColor"/>
+
+
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:layout_marginLeft="20dp"
+           android:layout_marginBottom="10dp"
+           >
+
+           <EditText
+               android:id="@+id/kg"
+               android:layout_width="150dp"
+               android:layout_height="wrap_content"
+               android:gravity="center_horizontal"
+               android:layout_alignParentBottom="true"
+               android:textSize="29dp"
+               android:inputType="number"
+               android:textColor="@color/black"
+               android:textStyle="bold"
+               android:maxLength="3"
+               android:maxLines="1"
+               android:ems="3"/>
+
+           <TextView
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="kg"
+               android:paddingBottom="5dp"
+               android:textColor="@color/textColor"
+               android:textSize="35dp"
+               android:textStyle="normal"
+              android:layout_alignParentRight="true"
+               android:layout_alignParentBottom="true"
+               android:layout_marginRight="120dp"
+               android:layout_marginBottom="10dp"/>
+
+       </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:elevation="20dp"
+        app:cardElevation="20dp"
+        app:cardBackgroundColor="@color/white"
+        android:layout_marginTop="30dp"
+        android:layout_margin="10dp"
+        app:cardCornerRadius="30dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            android:text="height"
+            android:textColor="@color/textColor"
+            android:textSize="22dp"
+            android:textStyle="bold" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+           android:layout_marginTop="50dp"
+
+            >
+
+            <EditText
+                android:id="@+id/ft"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="29dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLength="3"
+                android:inputType="number"
+                android:maxLines="1"
+              android:layout_marginStart="20dp"
+              android:maxEms="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:text="ft"
+                android:textColor="@color/textColor"
+                android:textSize="39dp"
+                android:textStyle="normal" />
+
+            <EditText
+                android:id="@+id/Inch"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:textSize="29dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:inputType="number"
+                android:layout_marginStart="10dp"
+                android:maxEms="2"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="inch"
+                android:layout_marginStart="5dp"
+                android:textColor="@color/textColor"
+                android:textSize="35dp"
+                android:textStyle="normal"
+
+                />
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/calculate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#FF5722"
+        android:text="Calculate"
+        android:textColor="@color/black"
+        android:textSize="30dp"
+        android:textStyle="bold"
+       android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        app:cornerRadius="20dp" />
+
+
+
+
+</LinearLayout>
