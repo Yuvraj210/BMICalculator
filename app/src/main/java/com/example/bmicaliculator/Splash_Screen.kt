@@ -16,9 +16,12 @@ class Splash_Screen : AppCompatActivity() {
       Handler().postDelayed(object :Runnable{
           override fun run() {
              startActivity(Intent(this@Splash_Screen,MainActivity::class.java))
+              finish()
           }
 
       },5000);
 
+
     }
+
 }

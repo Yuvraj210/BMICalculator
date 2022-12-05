@@ -55,4 +55,5 @@ class MainActivity : AppCompatActivity() {
    private fun calculatebmi(weight:Double,height:Double)=BigDecimal(weight/(height*height))
         .setScale(2,RoundingMode.HALF_EVEN).toDouble()
 
+
 }
